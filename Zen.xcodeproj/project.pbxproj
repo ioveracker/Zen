@@ -19,6 +19,8 @@
 		78C2BBA31CC1A52B008CD50E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C2BBA11CC1A52B008CD50E /* Main.storyboard */; };
 		78C2BBA51CC1A52B008CD50E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C2BBA41CC1A52B008CD50E /* Assets.xcassets */; };
 		78C2BBB01CC1A52B008CD50E /* tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C2BBAF1CC1A52B008CD50E /* tvOSTests.swift */; };
+		78C2BBC01CC1ADEB008CD50E /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C2BBBF1CC1ADEB008CD50E /* GitHubAPI.swift */; };
+		78C2BBC11CC1ADEB008CD50E /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C2BBBF1CC1ADEB008CD50E /* GitHubAPI.swift */; };
 		8E1F4DA0C4028C62C3093417 /* Pods_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B689C808E072AEDE8CD600 /* Pods_iOS.framework */; };
 		EF548CD6C5EADA8753BCDB78 /* Pods_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EBE77261B1F93B69D09C8D /* Pods_iOSTests.framework */; };
 		F48DA2F67D4D9220CC695B97 /* Pods_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31730D79482D0E1FA74259BD /* Pods_tvOS.framework */; };
@@ -65,6 +67,7 @@
 		78C2BBAB1CC1A52B008CD50E /* tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C2BBAF1CC1A52B008CD50E /* tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSTests.swift; sourceTree = "<group>"; };
 		78C2BBB11CC1A52B008CD50E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78C2BBBF1CC1ADEB008CD50E /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		7A50432EFFE5036B0E0692EC /* Pods-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tvOSTests/Pods-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		80B689C808E072AEDE8CD600 /* Pods_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		854369D022D256B3C12DAE38 /* Pods-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tvOSTests/Pods-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +128,7 @@
 		78C2BB6B1CC1A4B7008CD50E = {
 			isa = PBXGroup;
 			children = (
+				78C2BBBC1CC1AD9F008CD50E /* GitHub */,
 				78C2BB781CC1A4CC008CD50E /* iOS */,
 				78C2BB8D1CC1A4CC008CD50E /* iOSTests */,
 				78C2BB9C1CC1A52B008CD50E /* tvOS */,
@@ -187,6 +191,14 @@
 				78C2BBB11CC1A52B008CD50E /* Info.plist */,
 			);
 			path = tvOSTests;
+			sourceTree = "<group>";
+		};
+		78C2BBBC1CC1AD9F008CD50E /* GitHub */ = {
+			isa = PBXGroup;
+			children = (
+				78C2BBBF1CC1ADEB008CD50E /* GitHubAPI.swift */,
+			);
+			path = GitHub;
 			sourceTree = "<group>";
 		};
 		7EC160664DB2A3DC5233117C /* Pods */ = {
@@ -560,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78C2BB7C1CC1A4CC008CD50E /* ViewController.swift in Sources */,
+				78C2BBC01CC1ADEB008CD50E /* GitHubAPI.swift in Sources */,
 				78C2BB7A1CC1A4CC008CD50E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +590,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78C2BBA01CC1A52B008CD50E /* ViewController.swift in Sources */,
+				78C2BBC11CC1ADEB008CD50E /* GitHubAPI.swift in Sources */,
 				78C2BB9E1CC1A52B008CD50E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
