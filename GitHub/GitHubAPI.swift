@@ -9,9 +9,7 @@
 import Foundation
 import Moya
 
-// MARK: - Provider setup
-
-private func JSONResponseDataFormatter(data: NSData) -> NSData {
+func JSONResponseDataFormatter(data: NSData) -> NSData {
     do {
         let dataAsJSON = try NSJSONSerialization.JSONObjectWithData(data, options: [])
         let prettyData =  try NSJSONSerialization.dataWithJSONObject(dataAsJSON, options: .PrettyPrinted)
@@ -20,8 +18,6 @@ private func JSONResponseDataFormatter(data: NSData) -> NSData {
         return data
     }
 }
-
-let GitHubProvider = MoyaProvider<GitHub>(plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
 
 // MARK: - Provider support
 
@@ -56,7 +52,7 @@ extension GitHub: TargetType {
     public var sampleData: NSData {
         switch self {
         case .Zen:
-            return "Anything added dilutes everything else".dataUsingEncoding(NSUTF8StringEncoding)!
+            return "Design for failure.".dataUsingEncoding(NSUTF8StringEncoding)!
         }
     }
 }
