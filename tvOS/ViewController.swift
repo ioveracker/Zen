@@ -11,11 +11,16 @@ import Moya
 
 class ViewController: UIViewController {
 
+    var gitHubAPI: MoyaProvider<GitHub>!
+
     @IBOutlet weak var zenLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        gitHubAPI = MoyaProvider<GitHub>(plugins: [
+            NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)
+            ])
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +29,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func zenButtonTriggered(sender: UIButton) {
-        GitHubProvider.request(.Zen) { result in
+        gitHubAPI.request(.Zen) { result in
             switch result {
             case let .Success(response):
                 do {
