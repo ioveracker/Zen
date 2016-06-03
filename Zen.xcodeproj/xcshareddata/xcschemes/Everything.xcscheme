@@ -71,6 +71,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "783A03871D022A7800899E0B"
+               BuildableName = "tvOSUITests.xctest"
+               BlueprintName = "tvOSUITests"
+               ReferencedContainer = "container:Zen.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
